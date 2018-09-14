@@ -33,7 +33,6 @@
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/demo/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post" ],
-      "ServiceName": "ApiDemo",
       "LoadBalancerOptions": {
         "Type": "RoundRobin"
       },
@@ -51,6 +50,7 @@
         "TimeoutValue": 3000 // 如果下游请求的处理时间超过多少则视如该请求超时
       },
       "UseServiceDiscovery": true,
+      "ServiceName": "ApiDemo",
       "ReRoutesCaseSensitive": false // non case sensitive
     }
   ],
