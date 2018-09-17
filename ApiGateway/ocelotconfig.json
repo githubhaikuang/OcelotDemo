@@ -36,6 +36,7 @@
       "LoadBalancerOptions": {
         "Type": "RoundRobin"
       },
+	  //限流
       "RateLimitOptions": {
         "ClientWhitelist": [ "admin" ], // 白名单
         "EnableRateLimiting": true, // 是否启用限流
